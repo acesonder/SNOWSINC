@@ -28,6 +28,8 @@ if ($pdo) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- OpenDyslexic font for accessibility -->
+    <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -77,7 +79,7 @@ if ($pdo) {
         <!-- User Menu -->
         <div class="user-menu">
             <div class="user-avatar" data-dropdown="user-dropdown">
-                <?php echo getInitials(['first_name' => explode(' ', $userName)[0], 'last_name' => explode(' ', $userName)[1] ?? '']); ?>
+                <?php echo getInitials(splitFullName($userName)); ?>
             </div>
             <div id="user-dropdown" class="user-dropdown">
                 <div class="user-dropdown-header">

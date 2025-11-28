@@ -175,7 +175,7 @@ include __DIR__ . '/../templates/header.php';
                                             <i class="fas fa-<?php echo $user['is_active'] ? 'ban' : 'check'; ?>"></i>
                                         </button>
                                     </form>
-                                    <a href="messages.php?to=<?php echo $user['id']; ?>" class="btn btn-sm btn-outline" title="Message">
+                                    <a href="../messages.php?to=<?php echo $user['id']; ?>" class="btn btn-sm btn-outline" title="Message">
                                         <i class="fas fa-envelope"></i>
                                     </a>
                                 </div>

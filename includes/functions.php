@@ -290,5 +290,21 @@ function getFullName($user) {
  * @return string
  */
 function getInitials($user) {
-    return strtoupper(substr($user['first_name'], 0, 1) . substr($user['last_name'], 0, 1));
+    $first = !empty($user['first_name']) ? substr($user['first_name'], 0, 1) : '';
+    $last = !empty($user['last_name']) ? substr($user['last_name'], 0, 1) : '';
+    $initials = strtoupper($first . $last);
+    return $initials ?: '?';
+}
+
+/**
+ * Safely get name parts from a full name string
+ * @param string $fullName
+ * @return array ['first_name' => string, 'last_name' => string]
+ */
+function splitFullName($fullName) {
+    $parts = explode(' ', trim($fullName));
+    return [
+        'first_name' => $parts[0] ?? '',
+        'last_name' => isset($parts[1]) ? implode(' ', array_slice($parts, 1)) : ''
+    ];
 }

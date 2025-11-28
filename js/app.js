@@ -240,10 +240,10 @@ const OneSinc = {
         }
 
         // Password validation
-        if (field.type === 'password' && value && field.minLength) {
-            if (value.length < field.minLength) {
+        if (field.type === 'password' && value && field.minlength) {
+            if (value.length < field.minlength) {
                 isValid = false;
-                errorMsg = `Password must be at least ${field.minLength} characters`;
+                errorMsg = `Password must be at least ${field.minlength} characters`;
             }
         }
 

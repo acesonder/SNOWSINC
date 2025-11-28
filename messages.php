@@ -128,7 +128,7 @@ include __DIR__ . '/templates/header.php';
                        class="message-card <?php echo $conv['unread_count'] > 0 ? 'unread' : ''; ?> <?php echo $viewConversation == $conv['contact_id'] ? 'active' : ''; ?>"
                        style="text-decoration: none; <?php echo $viewConversation == $conv['contact_id'] ? 'background: var(--bg-primary);' : ''; ?>">
                         <div class="avatar">
-                            <?php echo getInitials(['first_name' => explode(' ', $conv['contact_name'])[0], 'last_name' => explode(' ', $conv['contact_name'])[1] ?? '']); ?>
+                            <?php echo getInitials(splitFullName($conv['contact_name'])); ?>
                         </div>
                         <div class="message-content">
                             <div class="message-header">
