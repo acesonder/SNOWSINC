@@ -57,9 +57,7 @@ const LandingPage = {
         const exitBtn = document.getElementById('quick-exit');
         if (exitBtn) {
             exitBtn.addEventListener('click', () => {
-                // Clear history state to prevent back button
-                window.history.replaceState(null, '', 'https://weather.com');
-                // Redirect to safe site
+                // Redirect to safe site immediately
                 window.location.replace('https://weather.com');
             });
 

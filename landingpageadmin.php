@@ -71,6 +71,9 @@ if ($isAuthenticated && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['t
         $section = $_POST['toggle_section'];
         $enabled = $_POST['enabled'] === 'true';
         
+        if (!file_exists(LANDING_CONFIG_FILE)) {
+            throw new Exception('Configuration file not found');
+        }
         $config = json_decode(file_get_contents(LANDING_CONFIG_FILE), true);
         
         if (isset($config[$section])) {
@@ -86,6 +89,9 @@ if ($isAuthenticated && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['t
 // Handle quick update
 if ($isAuthenticated && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['quick_update'])) {
     try {
+        if (!file_exists(LANDING_CONFIG_FILE)) {
+            throw new Exception('Configuration file not found');
+        }
         $config = json_decode(file_get_contents(LANDING_CONFIG_FILE), true);
         
         // Update values from form
