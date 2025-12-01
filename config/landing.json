@@ -1,0 +1,230 @@
+{
+    "hero": {
+        "enabled": true,
+        "headline": "Help When You Need It Most",
+        "subheadline": "We connect people in need with real help and trusted helpers nearby. Confidential. Free. Fast.",
+        "primaryCta": "Get Help Now",
+        "secondaryCta": "I Want to Help",
+        "image": "uploads/hero-image.jpg",
+        "backgroundStyle": "gradient"
+    },
+    "quickHelp": {
+        "enabled": true,
+        "title": "How Can We Help You Today?",
+        "buttons": [
+            {
+                "text": "I need help",
+                "icon": "fas fa-hand-holding-heart",
+                "action": "intake"
+            },
+            {
+                "text": "I'm a helper/volunteer",
+                "icon": "fas fa-hands-helping",
+                "action": "volunteer"
+            },
+            {
+                "text": "I want to donate",
+                "icon": "fas fa-gift",
+                "action": "donate"
+            }
+        ]
+    },
+    "howItWorks": {
+        "enabled": true,
+        "title": "How It Works",
+        "subtitle": "Getting help is simple",
+        "steps": [
+            {
+                "icon": "fas fa-edit",
+                "title": "Tell us what you need",
+                "description": "Share your situation through our simple intake form"
+            },
+            {
+                "icon": "fas fa-search",
+                "title": "We match you with help",
+                "description": "Our team connects you with the right resources and helpers"
+            },
+            {
+                "icon": "fas fa-heart",
+                "title": "Get support and follow-up",
+                "description": "Receive assistance and ongoing support throughout your journey"
+            }
+        ],
+        "avgResponseTime": "Under 24 hours"
+    },
+    "services": {
+        "enabled": true,
+        "title": "Services & Resources",
+        "subtitle": "We provide assistance across multiple areas",
+        "items": [
+            {
+                "icon": "fas fa-utensils",
+                "title": "Food Assistance",
+                "description": "Access to food banks, meal programs, and nutrition support",
+                "cta": "Get Food Help",
+                "enabled": true
+            },
+            {
+                "icon": "fas fa-home",
+                "title": "Shelter & Housing",
+                "description": "Emergency shelter, transitional housing, and rental assistance",
+                "cta": "Find Shelter",
+                "enabled": true
+            },
+            {
+                "icon": "fas fa-brain",
+                "title": "Mental Health",
+                "description": "Counseling, therapy, and crisis intervention services",
+                "cta": "Get Support",
+                "enabled": true
+            },
+            {
+                "icon": "fas fa-gavel",
+                "title": "Legal Aid",
+                "description": "Free legal advice and representation for civil matters",
+                "cta": "Legal Help",
+                "enabled": true
+            },
+            {
+                "icon": "fas fa-briefcase",
+                "title": "Employment",
+                "description": "Job training, resume help, and employment connections",
+                "cta": "Find Work",
+                "enabled": true
+            },
+            {
+                "icon": "fas fa-user-nurse",
+                "title": "Case Management",
+                "description": "Personalized support to coordinate all your needs",
+                "cta": "Get Started",
+                "enabled": true
+            }
+        ]
+    },
+    "testimonials": {
+        "enabled": true,
+        "title": "Success Stories",
+        "subtitle": "Real stories from people we've helped",
+        "items": [
+            {
+                "quote": "When I lost my job, I didn't know where to turn. OneSinc connected me with food assistance and job training within days. I'm back on my feet now.",
+                "author": "Maria T.",
+                "role": "Client",
+                "image": ""
+            },
+            {
+                "quote": "Volunteering with OneSinc has been life-changing. Seeing the direct impact we make in our community is incredibly rewarding.",
+                "author": "James K.",
+                "role": "Volunteer",
+                "image": ""
+            },
+            {
+                "quote": "The case manager helped me navigate housing assistance and healthcare all at once. I finally feel like someone is in my corner.",
+                "author": "Sarah M.",
+                "role": "Client",
+                "image": ""
+            }
+        ]
+    },
+    "helpers": {
+        "enabled": true,
+        "title": "Make a Difference",
+        "volunteerCta": {
+            "title": "Become a Volunteer",
+            "description": "Join our network of caring individuals making a real difference in people's lives.",
+            "buttonText": "Sign Up to Help"
+        },
+        "partnerCta": {
+            "title": "Partner With Us",
+            "description": "Organizations, businesses, and government agencies—let's coordinate resources together.",
+            "buttonText": "Partner Inquiry"
+        }
+    },
+    "impact": {
+        "enabled": true,
+        "title": "Our Impact",
+        "subtitle": "Making a measurable difference in our community",
+        "stats": [
+            {
+                "value": "5,000+",
+                "label": "People Helped"
+            },
+            {
+                "value": "150+",
+                "label": "Partner Organizations"
+            },
+            {
+                "value": "< 24hrs",
+                "label": "Avg Response Time"
+            },
+            {
+                "value": "98%",
+                "label": "Client Satisfaction"
+            }
+        ],
+        "transparencyLink": "#transparency"
+    },
+    "donation": {
+        "enabled": true,
+        "title": "Support Our Mission",
+        "subtitle": "Your donation helps us reach more people in need",
+        "amounts": [25, 50, 100, 250],
+        "customAmount": true,
+        "recurringOption": true
+    },
+    "resources": {
+        "enabled": true,
+        "title": "Quick Resources",
+        "subtitle": "Immediate access to essential information",
+        "items": [
+            {
+                "title": "Emergency Hotline",
+                "value": "1-800-555-HELP",
+                "icon": "fas fa-phone"
+            },
+            {
+                "title": "24/7 Crisis Line",
+                "value": "988",
+                "icon": "fas fa-phone-alt"
+            },
+            {
+                "title": "Text Support",
+                "value": "Text HELP to 741741",
+                "icon": "fas fa-sms"
+            }
+        ]
+    },
+    "footer": {
+        "enabled": true,
+        "contactEmail": "help@onesinc.org",
+        "contactPhone": "1-800-555-HELP",
+        "address": "123 Main Street, City, State 12345",
+        "socialLinks": {
+            "facebook": "#",
+            "twitter": "#",
+            "instagram": "#",
+            "linkedin": "#"
+        },
+        "copyright": "© 2024 OneSinc. All rights reserved."
+    },
+    "accessibility": {
+        "quickExit": true,
+        "largeTextToggle": true,
+        "simpleModeToggle": true,
+        "highContrastToggle": true
+    },
+    "navbar": {
+        "enabled": true,
+        "logo": "OneSinc",
+        "items": [
+            {"text": "About", "href": "#about", "enabled": true},
+            {"text": "Services", "href": "#services", "enabled": true},
+            {"text": "Get Help", "href": "#get-help", "enabled": true},
+            {"text": "For Helpers", "href": "#helpers", "enabled": true},
+            {"text": "Donate", "href": "#donate", "enabled": true},
+            {"text": "Resources", "href": "#resources", "enabled": true},
+            {"text": "Contact", "href": "#contact", "enabled": true}
+        ],
+        "loginLink": true
+    }
+}
